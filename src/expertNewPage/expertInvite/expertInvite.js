@@ -59,6 +59,7 @@ module.exports = {
                                             , taskId: task.id
                                         },
                                         function (d) {
+                                            if (d.flag) {
                                             d = JSONX.decode(d)
                                             EXPERT_INVITE.invitedExperts = d.data.pageItems
                                             EXPERT_INVITE.handle.reRenderInvitedExpert(data, _this)
@@ -79,7 +80,8 @@ module.exports = {
                                                     break
                                                 }
                                             }
-                                            _this.set('experts', experts)
+                                                _this.set('experts', experts)
+                                            }
                                         }, "json")
                                 }
                                 , addExpert: function (data) {
