@@ -1,0 +1,50 @@
+<div id="experBase" class="bidi-viewer" data-view="reviewList">
+{{%
+    <div class="articleContainer">
+        <div class="reviewedContainer">正文内容</div>
+        <div class="subMenuContainer">
+            <span>待审查项目</span>
+            {{#watch "list:projects"}}
+            <div class="reItem">
+
+                    <div class='pName'>
+                        {{name}}
+                    </div>
+                    <div class='rHandleWrap'>
+                        <textarea name={{id}} readonly>{{review}}</textarea>
+                        <p>
+                            <button type='button' class='blueBtn'>查看</button>
+                            <button type='button' class='ashBtn' {{watch "action: click: editReview"}}>编辑意见</button>
+                            <button type='button' class='greenBtn' {{watch "action: click: checkPass"}}>审查通过</button>
+                            <button type='button' class='redBtn' {{watch "action: click: checkNoPass"}}>退回</button>
+                        </p>
+                    </div>
+
+            </div>
+            {{/watch}}
+            <div id='sidebarL'></div>
+        </div>
+    </div>
+%}}
+</div>
+<style>
+    .blueBtn{
+    background:url('./account/images/listProject/listProject_u22.png');
+    width:51px;
+    }
+    .greenBtn{
+        background:url('./account/images/listProject/listProject_u26.png');
+        width:70px;
+        margin-left:-10px;
+    }
+    .ashBtn{
+        background:url('./account/images/listProject/listProject_u15.png');
+        width:70px;
+        margin-left:-10px;
+    }
+    .redBtn{
+        background:url('./account/images/listProject/listProject_u30.png');
+        width:51px;
+        margin-left:-10px;
+    }
+</style>

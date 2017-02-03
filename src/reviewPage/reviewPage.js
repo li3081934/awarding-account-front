@@ -18,7 +18,7 @@ KISSY.add('awarding-account-front/groupPage/groupPage.css', ["awarding-account-f
         var header = require('awarding-account-front/homePage/header');
         header.init('home_u18');
 
-        var article = require('awarding-account-front/expertPage/article');
+        var article = require('awarding-account-front/reviewPage/article');
         article.init();
 
         var SP = require('core-front/smartPath/smartPath');

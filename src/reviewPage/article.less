@@ -1,0 +1,68 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+#sidebarL{
+  width: 10px;
+  height: 500px;
+  position: absolute;
+  left: 260px;
+  top:10px;
+  background-color: #cccccc;
+}
+.reItem{
+  width: 230px;
+  height: 70px;
+  background-color: #00b7e3;
+  color: #ffffff;
+  margin-top: 15px;
+  padding: 5px;
+  box-sizing: border-box;
+  position: relative;
+  p{
+
+  }
+  button{
+    padding: 0;
+    color: #ffffff;
+    border: none;
+    height:28px;
+    line-height: 28px;
+  }
+  button:focus{
+    outline: none;
+  }
+  .rHandleWrap{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #eeeeee;
+  }
+  p{
+    margin: 0;
+    padding: 0;
+  }
+  textarea{
+    resize: none;
+    width: 220px;
+    height: 40px;
+    border: 1px solid #666666;
+  }
+  p{
+
+  }
+  div{
+    display: block;
+  }
+  div+div{
+    display: none;
+  }
+}
+.reItem:hover{
+  div{
+    display: none;
+  }
+  div+div{
+    display: block;
+  }
+}

@@ -41,10 +41,6 @@ module.exports = {
                         this.get(''))
 
                 },
-                removeGroup:function(data){
-                    this.set('group','0',data)
-                    Bidi.init()
-                },
                 eInfoEdit:function(e,data){
                     var tName=e.target.name
                     if(e.target.innerText=='修改'){
@@ -125,7 +121,7 @@ module.exports = {
                     this.set('openPWindow', '1')
                     this.set('openCWindow', '1')
 
-                },
+                }
 
 
 

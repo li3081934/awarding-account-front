@@ -19,7 +19,7 @@ module.exports = {
                 {expertName:'htr',expertPart:'北京分公司',isConfirm:"0",group:'0',expertID:'4'}
             ],
             groups:[
-                {name:'网络组',data:[{expertName:'555'}]},
+                {name:'网络组'},
                 {name:'业务终端组'},
                 {name:'IT支撑组'}
             ],
